@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-RUN sudo apt-get update && apt-get install -y \
+RUN sudo apt-get update && sudo apt-get install -y \
     python3-pil \
  && sudo rm -rf /var/lib/apt/lists/*
 

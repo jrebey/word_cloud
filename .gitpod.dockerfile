@@ -1,8 +1,8 @@
 FROM gitpod/workspace-full
 
-RUN apt-get update && apt-get install -y \
+RUN sudo apt-get update && apt-get install -y \
     python3-pil \
- && rm -rf /var/lib/apt/lists/*
+ && sudo rm -rf /var/lib/apt/lists/*
 
 ENV HOME=/home/gitpod
 WORKDIR $HOME
